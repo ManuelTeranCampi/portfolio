@@ -89,7 +89,7 @@ const Index = () => (
           </div>
 
               {
-                projects.map(({name, description, image, URL}, i) => (
+                projects.map(({name, description, image, url}, i) => (
                   
                     <div className="col-md-4 p-2" key={i}>
                       
@@ -101,7 +101,7 @@ const Index = () => (
                           <div className="card-body">
                             <h3>{name}</h3>
                             <p>{description}</p>
-                            <a href={URL} target="_blank">Ir al sitio</a>
+                            <a href={url} target="_blank">Ir al sitio</a>
                           </div>
                       </div>
                      
