@@ -18,7 +18,7 @@ const PostCard = ({ post }) => (
       <div className="overflow">
 
         <img src={post.imageURL} alt="" className="card-img-top" />
-        <div className="capa"></div>
+        <div className="capa">{post.title}</div>
       </div>
     
       <div className="card-body ">
