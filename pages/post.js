@@ -2,12 +2,15 @@ import Layout from '../components/Layout';
 import { useRouter } from 'next/router';
 import { posts } from '../profile';
 
+
 const Post = () => {
 
 const router = useRouter();
 
 const currentPost = posts.filter(
-	(post) => post.title === router.query.title
+	(post) => post.title === router.query.title,
+	(imageURL) => post.imageURL === router.query.imageURL,
+	(content) => post.content === router.query.content
 )[0];
 
 return (
