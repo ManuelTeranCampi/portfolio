@@ -14,3 +14,54 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.overflow {
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  /* box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5); */
+  position: relative;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.4);
+}
+
+.overflow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overflow .capa {
+  width: 0%;
+  height: 50hv;
+  background-color: rgba(3, 3, 3, 0.555);
+  position: absolute;
+  top: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .4s all;
+}
+
+.overflow:hover .capa {
+  width: 100%;
+  height: 100%;
+}
+
+
+#nprogress .bar {
+  background: #fd021f !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: #ffbb00;
+  border-left-color: #ffbb00;
+}
